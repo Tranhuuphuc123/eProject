@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"></script>
+    <script src="../js/Portfolio.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/Portfolio.css">
+    <link rel="stylesheet" href="../css/nav.css"> <!-- navbar css -->
+    <link rel="stylesheet" href="../css/Feedback.css"> <!-- feedback css -->
+    <link rel="stylesheet" href="../css/Footer.css"> <!-- feedback css -->
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav  id="header">
+     <div class="wrapper" id="nav-menu">
+       <div class="logo">
+         <img src="../images/logo/logo.jpg" alt="">
+         <style>
+            .logo img{
+                 width: 150px;
+                 height: 60px;
+                 border-radius: 60px;
+                 margin-top: 30px;
+                 box-sizing: border-box;
+             }
+         </style>
+       </div>
+       <input type="radio" name="slider" id="menu-btn">
+       <input type="radio" name="slider" id="close-btn">
+       <ul class="nav-links">
+         <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+         <li><a href="../BeautifulBeaches/Homepage.html" target="_blank">Home</a></li>
+         <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+         <li>
+           <a style="cursor: pointer;" class="desktop-item">Beaches</a>
+           <input type="checkbox" id="showDrop">
+           <label for="showDrop" class="mobile-item">Beaches</label>
+           <ul class="drop-menu">
+             <li><a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a></li>
+             <li><a href="../BeautifulBeaches/jodogahama.html" target="_blank">Jodogahama</a></li>
+             <li><a href="../BeautifulBeaches/Kauai.html" target="_blank">Kauai</a></li>
+             <li><a href="../BeautifulBeaches/Nungwi.html" target="_blank">Nungwi</a></li>
+             <li><a href="../BeautifulBeaches/Railay.html" target="_blank">Railay</a></li>
+             <li><a href="../BeautifulBeaches/Whitehaven.html" target="_blank">Whitehaven</a></li>
+           </ul>
+         </li>
+         <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Site map</a></li>
+         <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+         <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+         <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact</a></li>
+       </ul>
+       <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+     </div>
+   </nav>
+
+    <!-- Portfolio gallery -->
+    <section id="Portfolio">
+      <h1>This page is a collection of all images appearing in other beach sites plus images taken from external sources.</h1>
+      <ul>
+        <li class="list focus" data-filter="all">All</li>
+        <li class="list" data-filter="Halong">Halong bay</li>
+        <li class="list" data-filter="jodogahama">Jodogahama</li>
+        <li class="list" data-filter="kauai">Kauai</li>
+        <li class="list" data-filter="nungwi">Nungwi</li>
+        <li class="list" data-filter="railay">Railay</li>
+        <li class="list" data-filter="whitehaven">Whitehaven</li>
+      </ul>
+      <div class="picture">
+        <div class="itemBox" data-item="Halong">
+          <img class="myImg" src="../images/DukeKahanamokuBeach.jpg">
+          <p class="inFo">
+            Duke Kahanamoku Beach, go to:
+            <a href="../BeautifulBeaches/Halongbay.html" target="_blank">Halong bay</a>
+          </p>
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="jodogahama">
+          <img class="myImg" src="https://wallpaperaccess.com/full/399952.jpg">
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="kauai">
+          <img class="myImg" src="https://pics.freeartbackgrounds.com/fullhd/Beach_Background-885.jpg">
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="nungwi">
+          <img class="myImg" src="https://cdn.wallpapersafari.com/46/43/X0qIpe.jpg">
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="railay">
+          <img class="myImg" src="https://www.teahub.io/photos/full/22-220301_florida-beach-wallpapers-high-quality-hd-quality-pictures.jpg">
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+        <div class="itemBox" data-item="whitehaven">
+          <img class="myImg" src="https://www.teahub.io/photos/full/22-220301_florida-beach-wallpapers-high-quality-hd-quality-pictures.jpg">
+          <div class="modal">
+            <!-- The Close Button -->
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content myModelImg">
+            <!-- Modal Caption (Image Text) -->
+            <div class="caption"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- feedback section -->
+    <div class="feedbackSection">
+      <div id="beforeFb">
+        <div class="fbQuestion">
+          <p>Was this site helpful?</p>
+          <input type="radio" name="fb">
+          <input type="radio" name="fb">
+        </div>
+        <form>
+          <p>Tell us why...</p>
+          <textarea style="resize: none; width: 100%; height: 150px;"></textarea>
+          <i>Please note: we cannot respond to any comments made here directly. Please contact us if you need help or have questions.</i>
+          <div class="fbButton" onclick="FeedbackText()">Send feedback</div>
+        </form>
+      </div>
+      <div id="afterFb">
+        Thank you for taking the time to provide feedback
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="icon">
+        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-address-card"></i></a></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="../BeautifulBeaches/AboutUs.html" target="_blank">About us</a></li>
+        <li><a href="../BeautifulBeaches/Sitemap.html" target="_blank">Sitemap</a></li>
+        <li><a href="../BeautifulBeaches/Gallery.html" target="_blank">Gallery</a></li>
+        <li><a href="../BeautifulBeaches/FAQs.html" target="_blank">FAQs</a></li>
+        <li><a href="../BeautifulBeaches/ContactUs2.html" target="_blank">Contact us</a></li>
+      </ul>
+      <p><i class="fa-regular fa-copyright"></i>2022 Beautiful Beaches eProject | All rights reserved</p>
+    </footer>
+
+    <!-- feedback js -->
+    <script>
+      let before = document.getElementById('beforeFb');
+      let after = document.getElementById('afterFb');
+      after.style.display = "none";
+      function FeedbackText(){
+        before.style.display = "none";
+        after.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
